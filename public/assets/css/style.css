@@ -1,0 +1,461 @@
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 40px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background:  rgb(138, 175, 191);
+    color: white;
+    margin: 0 auto;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+.btn:hover {
+    background: rgba(48, 9, 36, 0.7);
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('../images/fondfibredessin.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    color: white;
+    
+}
+
+header .menu {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header .menu img {
+    max-height: 50px;
+    width: auto;
+}
+
+header .menu ul {
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul li {
+    margin-left: 30px;
+}
+
+.menu a {
+    color: white;
+}
+
+header .txt {
+    padding: 100px 0 200px;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 900;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#choix {
+    margin-top: -100px;
+}
+
+#choix article {
+    width: 50%;
+    padding: 100px 20px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+}
+
+#choix article h2 {
+    text-transform: uppercase;
+}
+
+#choix article#front {
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/lefront.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#choix article#back {
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/leback.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.lefront {
+    text-decoration: none;
+    color: white;
+}
+
+.leback {
+    text-decoration: none;
+    color: white;
+}
+
+.lefront:hover {
+    color: rgb(138, 175, 191);
+}
+
+.leback:hover {
+    color: rgb(48, 9, 36);
+}
+
+#base {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+#story {
+    margin: -40px 0;
+    background-image: linear-gradient(to right, rgba(124, 40, 99, 0.4), rgba(124, 40, 99, 0.2) 55%, #000 45%), url(../images/codeopti.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#story .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#story article {
+    width: 45%;
+    padding: 60px 50px 80px;
+    color: white;
+}
+
+#story article h2 {
+    margin-left: -100px;
+}
+
+#story article a {
+    margin-top: 20px;
+}
+
+#liste {
+    margin-bottom: 0;
+}
+
+#liste article h3 {
+    font-weight: 600;
+}
+
+#liste article {
+    width: calc(100%/3);
+    padding: 60px 50px;
+    text-align: center;
+}
+
+#liste article:nth-of-type(odd) {
+    background: rgba(224, 224, 224, 0.4)
+}
+
+#liste article img {
+    width: 48px;
+}
+
+#map {
+    margin: 0;
+    height: 450px;
+}
+
+#map iframe {
+    width: 100%;
+}
+
+footer {
+    background: #000;
+    border-top: 10px solid rgb(138, 175, 191);
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+footer article {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+footer article img {
+    height: 50px;
+    width: auto;
+}
+
+footer article #rs {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+footer form {
+    background: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    padding: 30px 70px;
+    width: calc((100% / 2) - 40px);
+    text-align: center;
+    margin: -120px 20px 0;
+    position: relative;
+    z-index: 50px;
+}
+
+footer form h3 {
+    text-transform: uppercase;
+}
+
+footer form p {
+    font-size: 0.8em;
+}
+
+footer form input:not([type=submit]) {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 30px auto;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+}
+
+footer form input:not([type=submit])::placeholder {
+    color: black;
+    font-size: 0.7em;
+}
+
+footer form input[type=submit] {
+    border: none;
+    background: rgb(138, 175, 191);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+footer article,
+footer aside {
+    width: calc((100% / 4));
+    color: white;
+    margin-top: 20px;
+}
+
+footer li div {
+    margin-left: 10px;
+}
+
+footer aside i {
+    color: rgb(138, 175, 191);
+}
+
+footer aside h3 {
+    margin-top: 0;
+    font-size: 0.6em;
+    text-transform: uppercase;
+}
+
+footer aside ul li p,
+footer aside ul li ul {
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+
+/*
+
+VERSION TABLETTE : breakpoint à 991px
+Tout le code CSS va dans la media queries
+*/
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    #liste article {
+        width: calc(100%/2);
+        padding: 60px 50px;
+        text-align: center;
+    }
+    #liste article:nth-of-type(odd) {
+        background: none;
+    }
+    #liste article:nth-of-type(2),
+    #liste article:nth-of-type(3),
+    #liste article:nth-of-type(6) {
+        background: rgba(224, 224, 224, 0.4);
+    }
+}
+
+
+/*
+
+VERSION MOBILE : breakpoint à 768px
+Tout le code CSS va dans la media queries
+*/
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    #choix {
+        max-width: 90%;
+    }
+    #choix article {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    #fonction li {
+        width: calc(100%/2);
+    }
+    #story {
+        background: #000;
+    }
+    #story article {
+        width: 100%;
+        padding: 60px 50px;
+    }
+    #story article h2 {
+        margin-left: 0;
+    }
+    #liste article {
+        width: 100%;
+    }
+    footer form,
+    footer article,
+    footer aside {
+        width: 80%;
+        margin: 20px auto;
+    }
+    footer form {
+        order: 1;
+        margin-top: -50px;
+        padding: 30px
+    }
+    footer article {
+        order: 2;
+        text-align: center;
+    }
+    footer aside {
+        order: 3
+    }
+
+
+        /* 
+    * STYLE POUR LE MENU MOBILE 
+    */
+    header .menu img {
+        max-height: 30px;
+        margin: 10px 0 0 12px;
+    }
+    header .menu ul {
+        display: block;
+    }
+    header .menu ul li {
+        margin-left: 0;
+    }
+    header .menu {
+        background: rgb(138, 175, 191);
+        color: #fff;
+        height: 50px;
+        position: relative;
+        display: block;
+        padding: 0;
+    }
+    .menu a.btn {
+        color: rgb(138, 175, 191);
+        background: white
+    }
+    .menu nav {
+        background: inherit;
+        font-size: 20px;
+        height: 0;
+        overflow: hidden;
+        text-transform: uppercase;
+        transition: height .2s;
+        text-align: center;
+    }
+    .menu nav>* {
+        display: block;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .menu nav li {
+        margin-bottom: 20px;
+    }
+    .menu .burger {
+        display: block;
+        appearance: none;
+        /*pour ne pas que la checkbox prenne son apparence par défaut*/
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        color: inherit;
+        cursor: pointer;
+        font-size: 30px;
+        line-height: 50px;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        right: 10px;
+        width: 50px;
+    }
+    /* quand on a pas cliqué sur le menu, on affiche le burger */
+    .menu .burger::before {
+        content: '\f0c9';
+    }
+    /* quand on a cliqué sur le burger, c'est qu'on clique sur l'input:checkbox et donc celle ci passe en mode "checked", ce qui nous permet de lui affecter un style différent sur cette pseudo classe */
+    .menu .burger:checked::before {
+        content: '\f00d';
+    }
+    /*
+    https://www.w3schools.com/cssref/css_selectors.asp
+    + : Sélectionne la nav placée directement après le input.burger
+    */
+    .menu .burger:checked+nav {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    
+}
