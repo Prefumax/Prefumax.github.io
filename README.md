@@ -1,2 +1,2 @@
 # Prefumax.github.io
-# ok
+https://prefumax.github.io/
